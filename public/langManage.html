@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多语言管理页面</title>
+    <link rel="stylesheet" href="/framework/jquery-ui/jquery-ui.css">
+    <style>
+        .fl { float: left; }
+        .fr { float: right; }
+        label { margin-right: 50px; }
+        label.fullWidth { display: block; padding-left: 120px; }
+        label.fullWidth span { display: inline-block; width: 120px; margin-left: -120px; text-align: right; }
+        .accordion .fullWidth, .accordion .fullWidth input { cursor: pointer; }
+        [role="langText"] { background: transparent; border: 0; color: #FFF; }
+        .accordion .fullWidth input[role="langText"]:focus { background: #FFF; border: 0; color: #333; cursor: text; }
+        form p { padding-left: 120px; }
+    </style>
+</head>
+<body>
+    <div module="langManage">
+        <form role="addLang" action="javascript:;">
+            <label class="fullWidth">
+                <span>语言名字：</span><input type="text" name="lang" />
+            </label>
+            <p><a href="/">返回</a></p>
+            <p>
+                <button type="submit">添加</button>
+                <button type="reset">重置</button>
+            </p>
+        </form>
+        <div role="langList"></div>
+    </div>
+    <script src="/js/jquery-1.11.1.js"></script>
+    <script src="/framework/jquery-ui/jquery-ui.js"></script>
+    <script src="/framework/jquery-ui/jquery.ui.datepicker-zh-CN.js"></script>
+    <script src="/js/class.js"></script>
+    <script src="/js/jquery.parse.url.js"></script>
+    <script src="/js/validate/jquery.validate.js"></script>
+    <script src="/js/validate/jquery.validate.rules.js"></script>
+    <script src="/js/validate/jquery.validate.add.method.js"></script>
+    <script src="/js/databind/jquery.databind.js"></script>
+    <script src="/js/databind/jquery.databind.setting.js"></script>
+    <script src="/js/module/module.js"></script>
+    <script src="/js/module/module.ajax.js"></script>
+    <script src="/js/module/module.button.js"></script>
+    <script src="/js/module/module.input.js"></script>
+    <script src="/js/module/module.select.js"></script>
+    <script src="/js/module/module.dialog.js"></script>
+    <script src="/js/module/module.le.js"></script>
+    <script src="/js/module/jquery.module.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/mod/langManage.js"></script>
+</body>
+</html>

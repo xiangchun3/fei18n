@@ -1,0 +1,1 @@
+window.i18n={"user": "用户","add": "新增","del": "删除","select": "查询","modify": "修改","password": "密码","success": "成功","error": "错误","": "","one": "一"}

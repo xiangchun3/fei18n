@@ -1,0 +1,1 @@
+window.i18n={"user": "user","add": "add","del": "del","select": "select","modify": "modify","password": "password","success": "success","error": "error","": "","one": "one"}

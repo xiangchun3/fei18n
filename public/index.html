@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多语言管理页面</title>
+    <link rel="stylesheet" href="/framework/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/framework/mmGrid/mmGrid.css">
+    <link rel="stylesheet" href="/framework/mmGrid/mmPaginator.css">
+    <style>
+        .fl { float: left; }
+        .fr { float: right; }
+        form label.fullWidth { display: block; padding-left: 120px; }
+        label.fullWidth span { display: inline-block; width: 120px; margin-left: -120px; text-align: right; }
+        [role="langText"] { background: transparent; border: 0; cursor: pointer; }
+        [role="langText"]:focus { background: #FFF; border: 0; color: #333; cursor: text; }
+        form p { padding-left: 120px; }
+    </style>
+</head>
+<body>
+    <div module="i18nManage">
+        <form role="add" action="javascript:;">
+            <label class="fullWidth"><span>key：</span><input type="text" name="key"></label>
+            <div></div>
+            <p>
+                <a href="/langManage.html">语言管理</a>
+            </p>
+            <p>
+                <button type="submit">添加</button>
+                <button type="reset">重置</button>
+            </p>
+        </form>
+        <button role="createLangFile">生成语言文件</button>
+        <div class="accordion"></div>
+        <table role="langList"></table>
+    </div>
+    <script src="/js/jquery-1.11.1.js"></script>
+    <script src="/framework/jquery-ui/jquery-ui.js"></script>
+    <script src="/framework/jquery-ui/jquery.ui.datepicker-zh-CN.js"></script>
+    <script src="/framework/mmGrid/mmGrid.js"></script>
+    <script src="/framework/mmGrid/mmPaginator.js"></script>
+    <script src="/js/class.js"></script>
+    <script src="/js/jquery.parse.url.js"></script>
+    <script src="/js/validate/jquery.validate.js"></script>
+    <script src="/js/validate/jquery.validate.rules.js"></script>
+    <script src="/js/validate/jquery.validate.add.method.js"></script>
+    <script src="/js/databind/jquery.databind.js"></script>
+    <script src="/js/databind/jquery.databind.setting.js"></script>
+    <script src="/js/module/module.js"></script>
+    <script src="/js/module/module.ajax.js"></script>
+    <script src="/js/module/module.button.js"></script>
+    <script src="/js/module/module.input.js"></script>
+    <script src="/js/module/module.select.js"></script>
+    <script src="/js/module/module.dialog.js"></script>
+    <script src="/js/module/module.le.js"></script>
+    <script src="/js/module/jquery.module.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/mod/i18nManage.js"></script>
+</body>
+</html>
